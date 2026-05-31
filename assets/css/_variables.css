@@ -1,0 +1,15 @@
+:root {
+  --color-primary: #ff7757;
+  --color-secondary: #172432;
+  --color-bg-accent: #fff8f1;
+  --color-white: #FFF;
+  --color-black: #000;
+  --color-contacts: #FFE8D4;
+
+  --text-primary: #172432;
+  --text-secondary: #767e86;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Rubik", sans-serif;
+  --font-mono: "Mulish", monospace;
+}
