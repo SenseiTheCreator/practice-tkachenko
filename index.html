@@ -4,22 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travellian</title>
+    <link rel="stylesheet" href="assets/css/_variables.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   </head>
+
   <body>
-    <header>
-      <h1>Travellian</h1>
+
+    <header class="main-header">
+
+      <!-- NAVBAR -->
+      <div class="navbar content-wrap d-flex vertical-center">
+        <nav class="d-flex vertical-center">
+
+          <div class="logo d-flex">
+            <img src="assets/images/icons/logo.svg" alt="Travellian" />
+          </div>
+
+          <!-- Меню -->
+          <button id="iconBlock" class="hamburger" aria-label="Відкрити меню">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="assets/images/icons/sprite.svg#menu"></use>
+            </svg>
+          </button>
+
+          <ul id="mainMenu" class="main-menu d-flex">
+            <li class="menu-close-item">
+              <button id="closeMenu" class="hamburger menu-close-btn" aria-label="Закрити меню">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="assets/images/icons/sprite.svg#close"></use>
+                </svg>
+              </button>
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+
+          <div class="nav-actions d-flex">
+            <button class="btn btn-outline">Login</button>
+            <button class="btn btn-primary">Sign Up</button>
+          </div>
+
+        </nav>
+      </div>
+
+      <!-- HERO -->
+      <div class="hero content-wrap">
+        <h1 class="hero-title">Start your unforgettable journey with us.</h1>
+        <p class="hero-subtitle">The best travel for your journey begins now</p>
+      </div>
+
+      <!-- BOOKING FORM -->
+      <div class="booking-wrap">
+        <form class="booking-form content-wrap d-flex" novalidate>
+
+          <div class="form-field">
+            <label class="form-label" for="destination">Destination</label>
+            <input id="destination" class="form-input" type="text" value="Dubai" />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="person">Person</label>
+            <div class="select-wrapper">
+              <select id="person" class="form-select">
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="checkin">Check In</label>
+            <input id="checkin" class="form-input" type="text" placeholder="Sun, 17th Sep 2020" />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="checkout">Check Out</label>
+            <input id="checkout" class="form-input" type="text" placeholder="Tue, 17th Oct 2020" />
+          </div>
+
+          <button type="submit" class="btn btn-book">
+            Book Now
+            <svg width="18" height="18" aria-hidden="true">
+              <use href="assets/images/icons/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+
+        </form>
+      </div>
+
     </header>
+
     <main>
-      <section>
-        <h2>Головна секція</h2>
-        <p>Це перша сторінка навчального вебпроєкту.</p>
-      </section>
+      <section></section>
     </main>
-    <footer>
-      <p>© 2026 Навчальна практика</p>
-    </footer>
+
+    <footer></footer>
+
     <script src="assets/js/main.js"></script>
   </body>
 </html>
