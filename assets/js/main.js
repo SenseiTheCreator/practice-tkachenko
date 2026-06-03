@@ -1,21 +1,10 @@
-const hamburger = document.getElementById('iconBlock');
-const closeBtn  = document.getElementById('closeMenu');
-const menu      = document.getElementById('mainMenu');
- 
-hamburger.addEventListener('click', () => {
-  menu.classList.add('menu-open');
-  document.body.style.overflow = 'hidden';
+const iconBlock = document.getElementById(`iconBlock`)
+const iconOpen = document.getElementById(`iconOpen`);
+const iconClose = document.getElementById(`iconClose`);
+const mainMenu = document.getElementById(`mainMenu`);
+
+iconBlock.addEventListener('click', () => {
+  iconOpen.classList.toggle('d-none');
+  iconClose.classList.toggle('d-none');
+  mainMenu.classList.toggle('menu-open');
 });
- 
-closeBtn.addEventListener('click', () => {
-  menu.classList.remove('menu-open');
-  document.body.style.overflow = '';
-});
- 
-menu.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    menu.classList.remove('menu-open');
-    document.body.style.overflow = '';
-  });
-});
- 
