@@ -4,26 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travellian</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="assets/css/_variables.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
-
     <header class="main-header">
-
       <!-- NAVBAR -->
       <div class="navbar d-flex vertical-center">
         <nav class="d-flex vertical-center">
-
           <div class="logo d-flex">
             <img src="assets/images/icons/logo.svg" alt="Travellian" />
           </div>
 
           <!-- MENU -->
-          
+
           <div id="iconBlock" class="menu-icon">
             <div id="iconOpen" class="menu-icon-open">
               <img src="assets/images/icons/burger-menu.svg" alt="Menu" />
@@ -33,18 +36,19 @@
             </div>
           </div>
           <ul id="mainMenu" class="main-menu d-flex">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Explore</a></li>
-          <li><a href="#">Travel</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Pricing</a></li>
-        </ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><button class="btn btn-outline mobile-login">Login</button></li>
+            <li><button class="btn btn-primary mobile-signup">Sign Up</button></li>
+          </ul>
 
           <div class="nav-actions d-flex">
             <button class="btn btn-outline">Login</button>
             <button class="btn btn-primary">Sign Up</button>
           </div>
-
         </nav>
       </div>
 
@@ -57,7 +61,6 @@
       <!-- BOOKING FORM -->
       <div class="booking-wrap">
         <form class="booking-form content-wrap d-flex" novalidate>
-
           <div class="form-field-wrap">
             <label class="form-label" for="destination">Destination</label>
             <input class="form-input" type="text" value="Dubai" />
@@ -72,38 +75,44 @@
                 <option>3</option>
                 <option>4</option>
               </select>
-              <img class="arrow-book" src="assets/images/icons/arrow-book.svg" alt="Arrow" />
+              <img class="arrow-book" src="assets/images/icons/arrow-book.svg" alt="Arrow"/>
             </div>
           </div>
 
           <div class="form-field-wrap">
             <label class="form-label">Check In</label>
-              <div class="select-wrapper">
-                <select class="form-select">
-                  <option>Sun, 17th Sep 2020</option>
-                </select>
-                <img class="arrow-book" src="assets/images/icons/arrow-book.svg" alt="Arrow" />
+            <div class="select-wrapper">
+              <select class="form-select">
+                <option>Sun, 17th Sep 2020</option>
+              </select>
+              <img
+                class="arrow-book"
+                src="assets/images/icons/arrow-book.svg"
+                alt="Arrow"
+              />
             </div>
           </div>
 
           <div class="form-field-wrap">
             <label class="form-label">Check Out</label>
-              <div class="select-wrapper">
-                <select class="form-select">
-                  <option>Tue, 17th Oct 2020</option>
-                </select>
-                <img class="arrow-book" src="assets/images/icons/arrow-book.svg" alt="Arrow" />
+            <div class="select-wrapper">
+              <select class="form-select">
+                <option>Tue, 17th Oct 2020</option>
+              </select>
+              <img
+                class="arrow-book"
+                src="assets/images/icons/arrow-book.svg"
+                alt="Arrow"
+              />
             </div>
           </div>
 
           <button type="submit" class="btn btn-book">
-            Book Now
+            <span>Book Now</span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
-
         </form>
       </div>
-
     </header>
 
     <main>
@@ -111,7 +120,78 @@
     </main>
 
     <footer></footer>
+    <!-- LOGIN MODAL -->
+    <div id="loginModal" class="modal-overlay d-none">
+      <div class="modal-box">
+        <button id="closeLogin" class="modal-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2 class="modal-title">Login</h2>
+        <p class="modal-subtitle">Welcome back! Please log in to access your account.</p>
+        <form class="modal-form">
+          <input type="email" placeholder="Enter your Email" />
+          <input type="password" placeholder="Enter your Password" />
+          <a href="#" class="modal-forgot">Forgot your password?</a>
+          <button type="submit" class="modal-btn modal-btn--primary">Login</button>
+          <button type="button" id="toSignUp" class="modal-btn modal-btn--secondary">
+            Sign Up
+          </button>
+        </form>
+        <div class="modal-divider">
+          <span>Or continue with</span>
+        </div>
+        <div class="modal-socials">
+          <button class="social-btn">
+            <i class="fa-brands fa-google"></i>
+          </button>
+          <button class="social-btn">
+            <i class="fa-brands fa-facebook"></i>
+          </button>
+          <button class="social-btn">
+            <i class="fa-brands fa-apple"></i>
+          </button>
+        </div>
+      </div>
+    </div>
 
+    <!-- SIGNUP MODAL -->
+    <div id="signupModal" class="modal-overlay d-none">
+      <div class="modal-box">
+        <button id="closeSignup" class="modal-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2 class="modal-title">Sign Up</h2>
+        <p class="modal-subtitle">Join our community today! 
+          Create an account to unlock exclusive features.
+        </p>
+        <form class="modal-form">
+          <input type="text" placeholder="Enter First Name" />
+          <input type="text" placeholder="Enter Last Name" />
+          <input type="email" placeholder="Enter your Email" />
+          <input type="password" placeholder="Enter your Password" />
+          <button type="submit" class="modal-btn modal-btn--primary">
+            Sign Up
+          </button>
+          <button type="button" id="toLogin" class="modal-btn modal-btn--secondary">
+            Login
+          </button>
+        </form>
+        <div class="modal-divider">
+          <span>Or Continue with</span>
+        </div>
+        <div class="modal-socials">
+          <button class="social-btn">
+            <i class="fa-brands fa-google"></i>
+          </button>
+          <button class="social-btn">
+            <i class="fa-brands fa-facebook"></i>
+          </button>
+          <button class="social-btn">
+            <i class="fa-brands fa-apple"></i>
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
