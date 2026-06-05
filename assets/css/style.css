@@ -62,7 +62,7 @@ ul {
 /* NAVBAR */
 .navbar {
   height: 98px;
-  width: 288px;
+  width: 100%;
   padding: 0 16px;
   position: relative;
   z-index: 10;
@@ -104,7 +104,7 @@ ul {
   right: 1000px;
   width: 100vw;
   height: calc(100dvh - 98px);
-  background-color: var(--color-white);
+  background-color: var( --color-contacts);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -127,6 +127,7 @@ ul {
 .menu-icon {
   order: 2;
   margin-left: auto;
+  margin-right: 16px;
   font-size: 1.5rem;
   color: var(--color-white);
   cursor: pointer;
@@ -150,7 +151,7 @@ ul {
 }
 
 .modal-box {
-  background: #fff;
+  background: var(--color-white);
   border-radius: 16px;
   padding: 40px 32px;
   width: 90%;
@@ -172,6 +173,7 @@ ul {
   cursor: pointer;
   font-size: 1rem;
 }
+
 
 .modal-title {
   font-family: var(--font-heading);
@@ -303,6 +305,13 @@ ul {
   background: rgba(255, 255, 255, 0.15);
 }
 
+.mobile-login{
+  color: var(--color-secondary);
+  background-color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 .btn-primary {
   padding: 10px 24px;
   background: var(--color-primary);
@@ -313,6 +322,11 @@ ul {
 
 .btn-primary:hover {
   opacity: 0.85;
+}
+
+.mobile-signup{
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 /* ===== HERO ===== */
