@@ -35,19 +35,24 @@
               <i class="fa-solid fa-xmark"></i>
             </div>
           </div>
+
           <ul id="mainMenu" class="main-menu d-flex">
             <li><a href="#">Home</a></li>
             <li><a href="#">Explore</a></li>
             <li><a href="#">Travel</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Pricing</a></li>
-            <li><button class="btn btn-outline mobile-login">Login</button></li>
-            <li><button class="btn btn-primary mobile-signup">Sign Up</button></li>
+            <li class="menu-mobile-btn">
+              <button class="btn btn-outline mobile-login">Login</button>
+            </li>
+            <li class="menu-mobile-btn">
+              <button class="btn btn-primary mobile-signup">Sign Up</button>
+            </li>
           </ul>
 
           <div class="nav-actions d-flex">
-            <button class="btn btn-outline">Login</button>
-            <button class="btn btn-primary">Sign Up</button>
+            <button id="loginBtn" class="btn btn-outline">Login</button>
+            <button id="signupBtn" class="btn btn-primary">Sign Up</button>
           </div>
         </nav>
       </div>
@@ -57,61 +62,65 @@
         <h1 class="hero-title">Start your unforgettable journey with us.</h1>
         <p class="hero-subtitle">The best travel for your journey begins now</p>
       </div>
+      
+      
+      <div class="hero-pagination">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
 
       <!-- BOOKING FORM -->
-      <div class="booking-wrap">
-        <form class="booking-form content-wrap d-flex" novalidate>
-          <div class="form-field-wrap">
-            <label class="form-label" for="destination">Destination</label>
-            <input class="form-input" type="text" value="Dubai" />
-          </div>
-
-          <div class="form-field-wrap">
-            <label class="form-label" for="person">Person</label>
-            <div class="select-wrapper">
-              <select class="form-select">
-                <option>1</option>
-                <option selected>2</option>
-                <option>3</option>
-                <option>4</option>
-              </select>
-              <img class="arrow-book" src="assets/images/icons/arrow-book.svg" alt="Arrow"/>
+        <div class="booking-wrap">
+        <div class="booking-form">
+          <div class="form-fields-group">
+            <div class="form-row">
+              <div class="form-field-wrap">
+                <label class="form-label" for="destination">Destination</label>
+                <input id="destination" class="form-input" type="text" placeholder="Dubai" />
+              </div>
+              <div class="form-field-wrap">
+                <label class="form-label" for="person">Person</label>
+                <div class="select-wrapper">
+                  <select id="person" class="form-select">
+                    <option>1</option>
+                    <option selected>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                  <img class="arrow-book" src="assets/images/icons/arrow-book.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field-wrap">
+                <label class="form-label" for="checkin">Check In</label>
+                <div class="select-wrapper">
+                  <select id="checkin" class="form-select">
+                    <option>Sun, 17th Sep 2020</option>
+                  </select>
+                  <img class="arrow-book" src="assets/images/icons/arrow-book.svg" alt="" />
+                </div>
+              </div>
+              <div class="form-field-wrap form-field-last">
+                <label class="form-label" for="checkout">Check Out</label>
+                <div class="select-wrapper">
+                  <select id="checkout" class="form-select">
+                    <option>Tue, 17th Oct 2020</option>
+                  </select>
+                  <img class="arrow-book" src="assets/images/icons/arrow-book.svg" alt="" />
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="form-field-wrap">
-            <label class="form-label">Check In</label>
-            <div class="select-wrapper">
-              <select class="form-select">
-                <option>Sun, 17th Sep 2020</option>
-              </select>
-              <img
-                class="arrow-book"
-                src="assets/images/icons/arrow-book.svg"
-                alt="Arrow"
-              />
-            </div>
-          </div>
-
-          <div class="form-field-wrap">
-            <label class="form-label">Check Out</label>
-            <div class="select-wrapper">
-              <select class="form-select">
-                <option>Tue, 17th Oct 2020</option>
-              </select>
-              <img
-                class="arrow-book"
-                src="assets/images/icons/arrow-book.svg"
-                alt="Arrow"
-              />
-            </div>
-          </div>
-
-          <button type="submit" class="btn btn-book">
+ 
+          <button type="button" class="btn-book">
             <span>Book Now</span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
-        </form>
+        </div>
       </div>
     </header>
 
