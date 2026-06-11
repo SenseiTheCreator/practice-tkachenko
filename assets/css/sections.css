@@ -1,0 +1,407 @@
+ /*  SECTIONS  */
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.section-head-text {
+  flex: 1;
+  position: relative;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+  margin-bottom: 12px;
+  line-height: 1.2;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 32px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 227px;
+  height: 3px;
+  background: var(--color-primary);
+}
+
+.section-title--offer::after {
+  width: 241px;
+}
+
+.section-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.2;
+  max-width: 480px;
+  margin-bottom: 100px;
+}
+
+.section-subtitle--offer {
+  margin-bottom: 60px;
+}
+
+.section-head-arrows {
+  display: flex;
+  flex-shrink: 0;
+  gap: 40px;
+  padding: 100px 58px 0 58px;
+}
+
+.arrows-desktop {
+  display: none;
+}
+
+.arrows-mobile {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 0;
+}
+
+.arrows-mobile--offer {
+  padding: 60px 0 0;
+}
+
+.arrow-btn {
+  width: 66px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-secondary);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.arrow-btn:hover {
+  background: var(--color-primary);
+}
+
+.arrow-btn img {
+  width: 10px;
+  height: auto;
+}
+
+/* DESTINATIONS */
+.destinations-section {
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.destinations-swiper {
+  overflow: visible;
+  padding-bottom: 8px;
+}
+
+.dest-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dest-card-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.dest-card-info {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  color: var(--color-white);
+}
+
+.dest-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.dest-card-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.dest-card-location i {
+  width: 24px;
+  height: auto;
+}
+
+/*  SPECIAL OFFER*/
+.offer-section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.offer-swiper {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.offer-card {
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--color-white);
+}
+
+.offer-card-img {
+  width: 100%;
+  height: 286px;
+  align-self: stretch;
+  display: block;
+  border-radius: 26px 26px 0 0;
+}
+
+.offer-card-body {
+  background: var(--color-bg-accent);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 0 0 26px 26px;
+}
+
+.offer-card-title {
+  font-family: var(--font-mono);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.offer-card-stars {
+  display: flex;
+  gap: 4px;
+}
+
+.offer-card-stars img {
+  width: 24px;
+  height: 24px;
+  margin-top: -8px;
+}
+
+.offer-card-text {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.2;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.offer-card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.offer-card-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.offer-card-from {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+}
+
+.offer-card-amount {
+  font-family: var(--font-body);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+.offer-card-btn {
+  height: 56px;
+  width: 127px;
+  padding: 16px 24px;
+  background: var(--color-secondary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 12px;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.25s;
+
+}
+
+.offer-card-btn:hover {
+  background: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3.375rem;
+  }
+
+  .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 365px;
+    height: 3px;
+    background: var(--color-primary);
+  }
+
+  .section-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.2;
+    max-width: 650px;
+  }
+
+  .dest-card-img {
+    height: 450px;
+  }
+  
+  .section-title--offer{
+    text-align: right;
+  }
+
+  .section-title--offer::after{
+    left: auto;
+    right: 0;
+    width: 241px;
+  }
+
+  .section-subtitle--offer{
+    text-align: right;
+    margin-bottom: 100px;
+    max-width: 100%;
+  }
+
+  .arrows-mobile--offer {
+    padding: 100px 0 0;
+  }
+  
+  .offer-card-body {
+    padding: 20px 24px;
+  }
+
+  .offer-card-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .offer-card-text{
+    font-size: 1.125rem;
+  }
+  
+  .dest-card-title{
+    font-size: 1.75rem;
+  }
+
+  .dest-card-location {
+    gap: 16px;
+    font-size: 1rem;
+  }
+  
+  .dest-card {
+    border-radius: 26px;
+  }
+}
+
+@media (min-width: 1152px) {
+  .section-head {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .offer-section{
+    padding: 100px 0;
+  }
+
+  .section-title {
+    font-size: 4rem;
+  }
+
+  .dest-card-img {
+    height: 661px;
+  }
+
+  .arrows-desktop {
+    display: flex;
+    padding: 100px 0 0 0;
+  }
+
+  .arrows-mobile {
+    display: none;
+  }
+
+  .destinations-section{
+    padding: 100px 0;
+  }
+
+  .section-subtitle{
+    font-size: 1.5rem;
+    max-width: 750px;
+  }
+
+  .dest-card-location{
+    font-size: 1.5rem;
+  }
+  .section-subtitle--offer {
+    text-align: right;
+    margin-bottom: 100px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .section-head {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .destinations-section {
+    padding: 140px 0;
+  }
+
+  .section-subtitle{
+  max-width: 100%;
+  }
+
+  .offer-section {
+    padding: 140px 0;
+  }
+  .offer-card-body {
+    padding: 40px 24px;
+  }
+}
+@media (min-width: 1920px) {
+  .offer-section {
+    padding: 120px 0;
+  }
+}

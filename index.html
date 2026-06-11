@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travellian</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -73,7 +74,7 @@
       </div>
 
       <!-- BOOKING FORM -->
-        <div class="booking-wrap">
+      <div class="booking-wrap">
         <div class="booking-form">
           <div class="form-fields-group">
             <div class="form-row">
@@ -125,10 +126,282 @@
     </header>
 
     <main>
-      <section></section>
-    </main>
 
+      <!-- DESTINATIONS -->
+      <section class="destinations-section" id="explore">
+        <div class="section-head content-wrap">
+          <div class="section-head-text">
+            <h2 class="section-title">Popular Destinations</h2>
+            <p class="section-subtitle">Most popular destinations around the world,
+               from historical places to natural wonders.</p>
+          </div>
+
+            <div class="section-head-arrows arrows-desktop">
+                <button id="dest-prev" class="arrow-btn swiper-btn-prev-dest">
+                  <img src="assets/images/icons/slider-left.svg" alt="Prev"/>
+                </button>
+                <button id="dest-next" class="arrow-btn swiper-btn-next-dest">
+                  <img src="assets/images/icons/slider-right.svg" alt="Next"/>
+                </button>
+            </div>
+        </div>
+
+        <div class="destinations-swiper swiper content-wrap">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="dest-card">
+                <img src="assets/images/berlin-col.jpg" alt="Monument of Berlin" class="dest-card-img" />
+                <div class="dest-card-info">
+                  <h3 class="dest-card-title">Monument of Berlin</h3>
+                  <p class="dest-card-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Berlin, Germany</span>
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="dest-card">
+                <img src="assets/images/london-col.jpg" alt="Millennium Bridge" class="dest-card-img" />
+                <div class="dest-card-info">
+                  <h3 class="dest-card-title">Millennium Bridge</h3>
+                  <p class="dest-card-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>London, United Kingdom</span>
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="dest-card">
+                <img src="assets/images/venice-col.jpg" alt="Rialto Bridge" class="dest-card-img" />
+                <div class="dest-card-info">
+                  <h3 class="dest-card-title">Rialto Bridge</h3>
+                  <p class="dest-card-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Venice, Italy</span>
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="dest-card">
+                <img src="assets/images/lisbon-col.jpg" alt="Sea of Orange Tiles" class="dest-card-img" />
+                <div class="dest-card-info">
+                  <h3 class="dest-card-title">Sea of Orange Tiles</h3>
+                  <p class="dest-card-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Lisbon, Portugal</span>
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="dest-card">
+                <img src="assets/images/madrid.png" alt="Madrid" class="dest-card-img" />
+                <div class="dest-card-info">
+                  <h3 class="dest-card-title">Madrid</h3>
+                  <p class="dest-card-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Madrid, Spain</span>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="section-head-arrows arrows-mobile">
+            <button class="arrow-btn swiper-btn-prev-dest">
+              <img src="assets/images/icons/slider-left.svg" alt="Prev"/>
+            </button>
+            <button class="arrow-btn swiper-btn-next-dest">
+              <img src="assets/images/icons/slider-right.svg" alt="Next"/>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPECIAL OFFER -->
+      <section class="offer-section" id="pricing">
+        <div class="section-head content-wrap">
+          <div class="section-head-arrows arrows-desktop">
+            <button id="offer-prev" class="arrow-btn swiper-btn-prev-offer">
+              <img src="assets/images/icons/slider-left.svg" alt="Prev"/>
+            </button>
+            <button id="offer-next" class="arrow-btn swiper-btn-next-offer">
+              <img src="assets/images/icons/slider-right.svg" alt="Next"/>
+            </button>
+          </div>
+          <div class="section-head-text">
+            <h2 class="section-title section-title--offer">Special Offer</h2>
+            <p class="section-subtitle section-subtitle--offer">Check out our special offer and discounts</p>
+          </div>
+        </div>
+
+        <div class="offer-swiper content-wrap content-wrap--offer">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <article class="offer-card">
+                <img src="assets/images/lisbon-container.png" alt="Lisbon" class="offer-card-img" />
+                <div class="offer-card-body">
+                  <h3 class="offer-card-title">Lisbon, Portugal</h3>
+                  <div class="offer-card-stars">
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                  </div>
+                  <p class="offer-card-text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+                  <div class="offer-card-footer">
+                    <div class="offer-card-price">
+                      <span class="offer-card-from">From</span>
+                      <span class="offer-card-amount">€500</span>
+                    </div>
+                    <button class="offer-card-btn">Details</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="offer-card">
+                <img src="assets/images/athens-container.png" alt="Athens" class="offer-card-img" />
+                <div class="offer-card-body">
+                  <h3 class="offer-card-title">Athens, Greece</h3>
+                  <div class="offer-card-stars">
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                  </div>
+                  <p class="offer-card-text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+                  <div class="offer-card-footer">
+                    <div class="offer-card-price">
+                      <span class="offer-card-from">From</span>
+                      <span class="offer-card-amount">€800</span>
+                    </div>
+                    <button class="offer-card-btn">Details</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+            <div class="swiper-slide">
+              <article class="offer-card">
+                <img src="assets/images/rome-container.png" alt="Rome" class="offer-card-img" />
+                <div class="offer-card-body">
+                  <h3 class="offer-card-title">Rome, Italy</h3>
+                  <div class="offer-card-stars">
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                  </div>
+                  <p class="offer-card-text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+                  <div class="offer-card-footer">
+                    <div class="offer-card-price">
+                      <span class="offer-card-from">From</span>
+                      <span class="offer-card-amount">€750</span>
+                    </div>
+                    <button class="offer-card-btn">Details</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+            <div class="swiper-slide">
+              <article class="offer-card">
+                <img src="assets/images/athens-container.png" alt="Athens" class="offer-card-img" />
+                <div class="offer-card-body">
+                  <h3 class="offer-card-title">Athens, Greece</h3>
+                  <div class="offer-card-stars">
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                  </div>
+                  <p class="offer-card-text">4 nights and 3 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+                  <div class="offer-card-footer">
+                    <div class="offer-card-price">
+                      <span class="offer-card-from">From</span>
+                      <span class="offer-card-amount">€700</span>
+                    </div>
+                    <button class="offer-card-btn">Details</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="offer-card">
+                <img src="assets/images/athens-container.png" alt="Athens" class="offer-card-img" />
+                <div class="offer-card-body">
+                  <h3 class="offer-card-title">Athens, Greece</h3>
+                  <div class="offer-card-stars">
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                  </div>
+                  <p class="offer-card-text">3 nights and 2 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+                  <div class="offer-card-footer">
+                    <div class="offer-card-price">
+                      <span class="offer-card-from">From</span>
+                      <span class="offer-card-amount">€500</span>
+                    </div>
+                    <button class="offer-card-btn">Details</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="offer-card">
+                <img src="assets/images/rome-container.png" alt="Rome" class="offer-card-img" />
+                <div class="offer-card-body">
+                  <h3 class="offer-card-title">Rome, Italy</h3>
+                  <div class="offer-card-stars">
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                    <img src="assets/images/icons/star.svg" alt="" />
+                  </div>
+                  <p class="offer-card-text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+                  <div class="offer-card-footer">
+                    <div class="offer-card-price">
+                      <span class="offer-card-from">From</span>
+                      <span class="offer-card-amount">€750</span>
+                    </div>
+                    <button class="offer-card-btn">Details</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="section-head-arrows arrows-mobile arrows-mobile--offer">
+                <button class="arrow-btn swiper-btn-prev-offer">
+                  <img src="assets/images/icons/slider-left.svg" alt="Prev"/>
+                </button>
+                <button class="arrow-btn swiper-btn-next-offer">
+                  <img src="assets/images/icons/slider-right.svg" alt="Next"/>
+                </button>
+              </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
+      
     <!-- LOGIN MODAL -->
     <div id="loginModal" class="modal-overlay d-none">
       <div class="modal-box">
@@ -201,6 +474,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
