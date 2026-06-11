@@ -54,8 +54,8 @@ document.querySelector('.mobile-signup').addEventListener('click', () => {
   });
 });
 
-// // SWIPER — destinations
-new Swiper('.destinations-swiper', {
+// SWIPER — destinations
+const destSwiper = new Swiper('.destinations-swiper', {
   slidesPerView: 1,
   spaceBetween: 32,
   navigation: {
@@ -70,7 +70,7 @@ new Swiper('.destinations-swiper', {
 });
 
 // SWIPER — offer
-new Swiper('.offer-swiper', {
+const offerSwiper = new Swiper('.offer-swiper', {
   slidesPerView: 1,
   spaceBetween: 32,
   navigation: {
@@ -83,3 +83,9 @@ new Swiper('.offer-swiper', {
     1920: { slidesPerView: 3 },
   }
 });
+
+// mobile clicks
+document.getElementById('dest-prev-mob').addEventListener('click', () => destSwiper.slidePrev());
+document.getElementById('dest-next-mob').addEventListener('click', () => destSwiper.slideNext());
+document.getElementById('offer-prev-mob').addEventListener('click', () => offerSwiper.slidePrev());
+document.getElementById('offer-next-mob').addEventListener('click', () => offerSwiper.slideNext());
