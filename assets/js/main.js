@@ -84,8 +84,20 @@ const offerSwiper = new Swiper('.offer-swiper', {
   }
 });
 
+// SWIPER — gallery
+const gallerySwiper = new Swiper('.gallery-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    prevEl: '#gallery-prev',
+    nextEl: '#gallery-next',
+  },
+});
+
 // mobile clicks
 document.getElementById('dest-prev-mob').addEventListener('click', () => destSwiper.slidePrev());
 document.getElementById('dest-next-mob').addEventListener('click', () => destSwiper.slideNext());
 document.getElementById('offer-prev-mob').addEventListener('click', () => offerSwiper.slidePrev());
 document.getElementById('offer-next-mob').addEventListener('click', () => offerSwiper.slideNext());
+document.getElementById('gallery-prev-mob').addEventListener('click', () => gallerySwiper.slidePrev());
+document.getElementById('gallery-next-mob').addEventListener('click', () => gallerySwiper.slideNext());
