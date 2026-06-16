@@ -590,7 +590,7 @@ ul {
 
 /* ===== DESKTOP 1152px ===== */
 @media (min-width: 1152px) {
-  .content-wrap{
+  .content-wrap {
     padding: 0 32px;
   }
   .navbar {
@@ -645,7 +645,7 @@ ul {
     width: 900px;
   }
 
-  .hero-subtitle{
+  .hero-subtitle {
     font-size: 1.5rem;
     line-height: 28px;
   }
@@ -759,12 +759,13 @@ ul {
     height: 216px;
   }
 
-  .form-input, .form-select{
+  .form-input,
+  .form-select {
     font-size: 1.125rem;
     width: 195.75px;
   }
 
-  .form-field-wrap:first-child{
+  .form-field-wrap:first-child {
     padding: 0 24px 0 32px;
   }
 
@@ -776,7 +777,7 @@ ul {
 
 /* ===== DESKTOP 1920px ===== */
 @media (min-width: 1920px) {
-  .main-header{
+  .main-header {
     min-height: auto;
   }
 
@@ -784,7 +785,7 @@ ul {
     padding: 0 182px;
   }
 
-  .content-wrap--offer{
+  .content-wrap--offer {
     padding: 0;
     width: calc(100% - 364px);
     margin: 0 182px;
@@ -817,7 +818,7 @@ ul {
     margin-right: 447px;
     margin-bottom: 270px;
   }
-  
+
   .btn-book {
     width: 170px;
     font-size: 2.25rem;
