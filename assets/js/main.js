@@ -94,6 +94,22 @@ const gallerySwiper = new Swiper('.gallery-swiper', {
   },
 });
 
+// SWIPER — experiences
+new Swiper('.experiences-swiper', {
+  slidesPerView: 1.1,
+  spaceBetween: 32,
+  navigation: {
+    prevEl: '.swiper-btn-prev-exp',
+    nextEl: '.swiper-btn-next-exp',
+  },
+  breakpoints: {
+    320:  { slidesPerView: 1   },
+    768:  { slidesPerView: 1.4 },
+    1152: { slidesPerView: 2.1 },
+    1440: { slidesPerView: 2.3 },
+  }
+});
+
 // mobile clicks
 document.getElementById('dest-prev-mob').addEventListener('click', () => destSwiper.slidePrev());
 document.getElementById('dest-next-mob').addEventListener('click', () => destSwiper.slideNext());

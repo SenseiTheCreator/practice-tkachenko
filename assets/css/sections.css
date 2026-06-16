@@ -468,6 +468,83 @@
   width: 288px;
 }
 
+/*  EXPERIENCES  */
+.section-title--exp{
+  font-size: 3rem;
+}
+
+.section-title--exp::after{
+  width: 347px;
+}
+.experiences-section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.experiences-swiper {
+  overflow: visible;
+  padding-top: 60px;
+  padding-bottom: 8px;
+}
+
+.exp-card {
+  background: rgba(245, 246, 247, 1);
+  border-radius: 12px;
+  padding: 60px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.exp-card-job{
+  margin-top: -16px;
+}
+
+.exp-card-avatar {
+  position: absolute;
+  top: -65px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.exp-card-text {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.exp-card-stars {
+  display: flex;
+  gap: 4px;
+}
+
+.exp-card-stars img {
+  width: 24px;
+  height: 24px;
+}
+
+.exp-card-name {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.exp-card-job {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+}
+
+.section-head-arrows--exp{
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 0;
+}
+
 @media (min-width: 768px) {
   .section-title {
     font-size: 3.375rem;
@@ -603,6 +680,19 @@
 
   .gallery-grid{
     padding: 0 20px;
+  }
+
+  .section-subtitle--exp{
+    font-size: 1.5rem;
+    margin-bottom: 160px;
+  }
+
+  .exp-card{
+    padding: 60px 40px 40px;
+  }
+
+  .section-head-arrows--exp{
+    padding: 160px 0 0;
   }
 }
 
@@ -749,6 +839,14 @@
     grid-template-columns: repeat(4, 1fr);
     padding: 37px 32px;
   }
+
+  .experiences-section {
+    padding: 100px 0 200px;
+  }
+
+  .section-head-arrows--exp{
+    justify-content: flex-end;
+  }
 }
 @media (min-width: 1440px) {
   .section-head {
@@ -817,6 +915,10 @@
 
   .gallery-img{
     height: 469px;
+  }
+
+  .experiences-section {
+    padding: 140px 0 240px;
   }
 }
 @media (min-width: 1920px) {
